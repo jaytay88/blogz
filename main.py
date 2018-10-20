@@ -18,9 +18,6 @@ class Blog(db.Model):
         self.blog_name = blog_name
         self.blog_entry = blog_entry
 
-    def __repr__(self):
-        return '<Title %r>'  % self.blog_name
-
 def get_current_bloglist():
     return Blog.query.all()
 
